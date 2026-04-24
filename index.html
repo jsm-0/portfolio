@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Jasmine Adouwekonou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">// <span>portfolio</span>.html</div>
+  <ul>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#etudes">Études</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-orb"></div>
+  <div class="hero-orb-ring"></div>
+  <div class="hero-inner">
+    <div class="terminal-tag">root@portfolio:~$ <span id="typed"></span><span id="typed-cursor"></span></div>
+    <h1>
+      <span class="line1">Jasmine Adouwekonou</span>
+      <span class="line2">Etudiante en BTS SIO</span>    </h1>
+    <p class="hero-desc">
+      En formation BTS SIO, je développe mes compétences en gestion des systèmes, développement web et gestion de projets IT. Je suis aussi à la recherche d'opportunités de stage et d'alternance. Bienvenue sur mon portfolio.
+    </p>
+    <div class="hero-cta">
+      <a href="#competences" class="btn-primary">Voir mes compétences</a>
+      <a href="#contact" class="btn-outline">Me contacter</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="competences">
+  <div class="section-label">// Skills</div>
+  <div class="section-title">Mes <span>Compétences</span></div>
+  <p class="skills-intro">Référentiel BTS SIO — cliquez sur chaque bloc pour dérouler les compétences associées.</p>
+
+  <div class="skill-block fade-up" style="transition-delay: 0.0s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Gérer le patrimoine informatique</span>
+        <span class="skill-badge">C1</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Recenser et identifier les ressources numériques</div>
+        <div class="skill-item">Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</div>
+        <div class="skill-item">Mettre en place et vérifier les niveaux d'habilitation associés à un service</div>
+        <div class="skill-item">Vérifier les conditions de la continuité d'un service informatique</div>
+        <div class="skill-item">Gérer des sauvegardes</div>
+        <div class="skill-item">Vérifier le respect des règles d'utilisation des ressources numériques</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.07s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Répondre aux incidents et aux demandes d'assistance</span>
+        <span class="skill-badge">C2</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Collecter, suivre et orienter des demandes</div>
+        <div class="skill-item">Traiter des demandes concernant les services réseau et système</div>
+        <div class="skill-item">Traiter des demandes concernant les applications</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.14s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Développer la présence en ligne de l'organisation</span>
+        <span class="skill-badge">C3</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Participer à la valorisation de l'image de l'organisation sur les médias numériques</div>
+        <div class="skill-item">Référencer les services en ligne de l'organisation et mesurer leur visibilité</div>
+        <div class="skill-item">Participer à l'évolution d'un site Web exploitant les données de l'organisation</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.21s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Travailler en mode projet</span>
+        <span class="skill-badge">C4</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Analyser les objectifs et les modalités d'organisation d'un projet</div>
+        <div class="skill-item">Planifier les activités</div>
+        <div class="skill-item">Évaluer les indicateurs de suivi d'un projet et analyser les écarts</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.28s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Mettre à disposition des utilisateurs un service informatique</span>
+        <span class="skill-badge">C5</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Réaliser les tests d'intégration et d'acceptation d'un service</div>
+        <div class="skill-item">Déployer un service</div>
+        <div class="skill-item">Accompagner les utilisateurs dans la mise en place d'un service</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.35s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Organiser son développement professionnel</span>
+        <span class="skill-badge">C6</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Mettre en place son environnement d'apprentissage personnel</div>
+        <div class="skill-item">Mettre en œuvre des outils et stratégies de veille informationnelle</div>
+        <div class="skill-item">Gérer son identité professionnelle</div>
+        <div class="skill-item">Développer son projet professionnel</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.42s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Référencer les services en ligne et mesurer leur visibilité</span>
+        <span class="skill-badge">C11</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Mettre en ligne mon site (hébergement, nom de domaine )</div>
+        <div class="skill-item">Analyser la visibilité</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.49s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Collecter, suivre et orienter des demandes</span>
+        <span class="skill-badge">C7</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Corriger ou orienter les problèmes</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.56s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Planifier les activités</span>
+        <span class="skill-badge">C14</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Découper le projet</div>
+        <div class="skill-item">Organiser les tâches</div>
+        <div class="skill-item">Gérer son temps</div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-block fade-up" style="transition-delay: 0.63s">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      <div class="skill-header-left">
+        <span class="skill-name">Déployer un service</span>
+        <span class="skill-badge">C17</span>
+      </div>
+      <svg class="skill-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+    <div class="skill-body">
+      <div class="skill-items">
+        <div class="skill-item">Mise en production du service/site</div>
+        <div class="skill-item">Configuré l'environnement</div>
+        <div class="skill-item">Vérification du bon fonctionnement des servies</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PROJETS -->
+<section id="projets">
+  <div class="section-label">// Projects</div>
+  <div class="section-title">Mes <span>Projets</span></div>
+  <div class="projects-grid">
+    <div class="project-card fade-up" style="transition-delay: 0.0s">
+      <span class="project-emoji">🎫</span>
+      <div class="project-name">Gestion de tickets GLPI</div>
+      <p class="project-desc">Prise en main et administration d'un système de ticketing GLPI. Traitement des incidents, suivi des demandes et orientation des utilisateurs.</p>
+      <div class="project-tags">
+        <span class="tag">GLPI</span>
+        <span class="tag">Support N1</span>
+        <span class="project-skill-tag">C1</span>
+        <span class="project-skill-tag">C2</span>
+      </div>
+    </div>
+    <div class="project-card fade-up" style="transition-delay: 0.08s">
+      <span class="project-emoji">📊</span>
+      <div class="project-name">Gestion de projet Trello</div>
+      <p class="project-desc">Organisation du travail en groupe avec Trello : création de tableaux Kanban, répartition des tâches, suivi de l'avancement en temps réel.</p>
+      <div class="project-tags">
+        <span class="tag">Trello</span>
+        <span class="project-skill-tag">C4</span>
+      </div>
+    </div>
+    <div class="project-card fade-up" style="transition-delay: 0.16s">
+      <span class="project-emoji">🗄️</span>
+      <div class="project-name">Administration BDD — Droits utilisateurs</div>
+      <p class="project-desc">Gestion des comptes utilisateurs et attribution des droits dans une base de données. Mise en place des habilitations et vérification des accès.</p>
+      <div class="project-tags">
+        <span class="tag">SQL</span>
+        <span class="tag">SGBD</span>
+        <span class="tag">Sécurité</span>
+        <span class="project-skill-tag">C1</span>
+      </div>
+    </div>
+    <div class="project-card fade-up" style="transition-delay: 0.24s">
+      <span class="project-emoji">📱</span>
+      <div class="project-name">Présence sur les réseaux sociaux</div>
+      <p class="project-desc">Création et gestion d'un compte professionnel sur les réseaux sociaux pour promouvoir le service développé en classe. Stratégie de visibilité numérique.</p>
+      <div class="project-tags">
+        <span class="tag">Social Media</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Web</span>
+        <span class="project-skill-tag">C3</span>
+      </div>
+    </div>
+    <div class="project-card fade-up" style="transition-delay: 0.32s">
+      <span class="project-emoji">🐙</span>
+      <div class="project-name">Portfolio GitHub</div>
+      <p class="project-desc">Publication et partage de mes projets personnels sur GitHub. Gestion de versions, documentation des dépôts et développement de l'identité numérique.</p>
+      <div class="project-tags">
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">Open Source</span>
+        <span class="project-skill-tag">C6</span>
+      </div>
+    </div>
+    <div class="project-card fade-up" style="transition-delay: 0.4s">
+      <span class="project-emoji">💻</span>
+      <div class="project-name">Ce portfolio</div>
+      <p class="project-desc">Conception et développement de ce portfolio web en PHP, HTML, CSS et JavaScript. Design personnalisé, responsive et interactif.</p>
+      <div class="project-tags">
+        <span class="tag">PHP</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="project-skill-tag">C3</span>
+        <span class="project-skill-tag">C6</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÉTUDES -->
+<section id="etudes">
+  <div class="section-label">// Education</div>
+  <div class="section-title">Mon <span>Parcours</span></div>
+  <div class="timeline">
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025 — En cours</div>
+      <div class="timeline-title">BTS SIO — Services Informatiques aux Organisations</div>
+      <div class="timeline-place">Option SLAM / SISR · Efrei Paris</div>
+      <p class="timeline-desc">Formation en 2 ans couvrant la gestion du patrimoine informatique, le développement web, la cybersécurité, les réseaux, le support utilisateur et la gestion de projets informatiques.</p>
+    </div>
+    <div class="timeline-item fade-up" style="transition-delay: 0.1s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2021 — 2023</div>
+      <div class="timeline-title">Baccalauréat</div>
+      <div class="timeline-place">Générale</div>
+      <p class="timeline-desc">Obtention du baccalauréat avec une spécialisation en Science de l'ingénieur et Numérique et sciences de l'informatique.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">// Contact</div>
+  <div class="section-title">Me <span>Contacter</span></div>
+  <div class="contact-grid">
+    <div>
+      <p class="contact-text">Disponible pour des opportunités de stage, alternance ou pour discuter de projets informatiques. N'hésitez pas à me contacter!</p>
+      <div class="contact-links">
+        <a href="https://github.com/jsm-0" class="contact-link"><span class="contact-link-icon">⬡</span> github.com/jsm-0</a>
+        <a href="mailto:jasmineadou1.ja@gmail.com" class="contact-link"><span class="contact-link-icon">✉</span> jasmineadou1.ja@gmail.com</a>
+        <a href="https://www.linkedin.com/in/jasmine-adouwekonou-82a209387" class="contact-link"><span class="contact-link-icon">in</span> linkedin.com/in/jasmine-adouwekonou-82a209387</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">// portfolio.html — BTS SIO 2025</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
