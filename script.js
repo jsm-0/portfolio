@@ -66,3 +66,21 @@ function handleForm(e) {
     e.target.reset();
   }, 3000);
 }
+
+// ─── RÉALISATION ACCORDION ───
+function toggleReal(header) {
+  const body = header.nextElementSibling;
+  const isOpen = header.classList.contains('open');
+
+  // Ferme toutes les réalisations ouvertes
+  document.querySelectorAll('.real-header.open').forEach(h => {
+    h.classList.remove('open');
+    h.nextElementSibling.classList.remove('open');
+  });
+
+  // Ouvre celle cliquée si elle était fermée
+  if (!isOpen) {
+    header.classList.add('open');
+    body.classList.add('open');
+  }
+}
