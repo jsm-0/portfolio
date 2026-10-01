@@ -1,29 +1,4 @@
-// ─── TYPING EFFECT ───
-const phrases = ['whoami', 'echo $skills', 'cat portfolio.php'];
-let pi = 0, ci = 0, deleting = false;
-const typedEl = document.getElementById('typed');
 
-function type() {
-  const phrase = phrases[pi];
-  if (!deleting) {
-    typedEl.textContent = phrase.substring(0, ci + 1);
-    ci++;
-    if (ci === phrase.length) {
-      deleting = true;
-      setTimeout(type, 1600);
-      return;
-    }
-  } else {
-    typedEl.textContent = phrase.substring(0, ci - 1);
-    ci--;
-    if (ci === 0) {
-      deleting = false;
-      pi = (pi + 1) % phrases.length;
-    }
-  }
-  setTimeout(type, deleting ? 60 : 90);
-}
-type();
 
 // ─── SKILL ACCORDION ───
 function toggleSkill(header) {
